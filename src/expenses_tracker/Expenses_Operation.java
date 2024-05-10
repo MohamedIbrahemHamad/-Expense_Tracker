@@ -4,8 +4,8 @@ package expenses_tracker;
 public class Expenses_Operation {
     
      
-    private Budget budget= new Budget() ;
-    private Expense [ ] All_expenses = new Expense[100] ;
+    private Budget budget = new Budget() ;
+    private Expense [] All_expenses = new Expense[100] ;
     private  int count = 0 ;
     private  double total=0;
 
@@ -30,7 +30,7 @@ public class Expenses_Operation {
         boolean exsist = false ;
         
         for(int i=0 ; i<count ; i++) {
-            if( All_expenses[i].category==c && All_expenses[i].value==v ) {
+            if( All_expenses[i].category == c && All_expenses[i].value==v ) {
                 All_expenses[i].category=All_expenses[count-1].category ;
                 All_expenses[i].value=All_expenses[count-1].value ;
                 budget. modify_budget ( v , '+') ;

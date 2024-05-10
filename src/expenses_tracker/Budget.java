@@ -20,6 +20,7 @@ public class Budget {
             System.out.println("Error: Budget cannot be negative.");
         }
     }
+    
     public double get_budget()
     {
         return current_budget;
